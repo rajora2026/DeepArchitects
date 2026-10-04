@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajvardhan Singh | Web Developer & UI/UX Designer</title>
+  <link rel="icon" href="logo.png" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Rajvardhan Singh, a skilled web developer specializing in responsive websites, UI/UX design, and modern web technologies.">
+  <meta name="keywords" content="web developer, frontend developer, portfolio, UI/UX designer, React developer, JavaScript, Indore">
+  <meta name="author" content="Rajvardhan Singh">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Rajvardhan Singh | Web Developer & UI/UX Designer">
+  <meta property="og:description" content="Professional portfolio showcasing web development projects and skills in modern technologies.">
+  <meta property="og:image" content="https://www.rajvardhansingh.in/assets/images/social-preview.jpg">
+  <meta property="og:url" content="https://www.rajvardhansingh.in/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rajvardhan Singh | Web Developer & UI/UX Designer">
+  <meta name="twitter:description" content="Professional portfolio showcasing web development projects and skills in modern technologies.">
+  <meta name="twitter:image" content="https://www.rajvardhansingh.in/assets/images/social-preview.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Glide.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css">
+
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --primary-dark: #1e40af;
+      --primary-light: #3b82f6;
+      --secondary-color: #10b981;
+      --dark-color: #1e293b;
+      --light-color: #f8fafc;
+      --text-color: #334155;
+      --text-light: #64748b;
+      --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, #059669 100%);
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --border-radius: 12px;
+      --border-radius-lg: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      background-color: var(--light-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+      color: var(--dark-color);
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      max-width: 700px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 30px;
+      background: var(--gradient);
+      color: white;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    .btn-outline:hover {
+      background: var(--gradient);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: var(--gradient-secondary);
+    }
+
+    /* ============================================
+       PRELOADER
+       ============================================ */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--light-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .preloader .loader {
+      width: 80px;
+      height: 80px;
+    }
+
+    /* ============================================
+       HEADER
+       ============================================ */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: rgba(248, 250, 252, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    header.sticky {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--dark-color);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: var(--primary-color);
+    }
+
+    .logo-icon {
+      width: 30px;
+      height: 30px;
+      background: var(--gradient);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .nav-menu {
+      display: flex;
+    }
+
+    .nav-item {
+      margin-left: 30px;
+      position: relative;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      position: relative;
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-link.active {
+      color: var(--primary-color);
+    }
+
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: var(--dark-color);
+      position: absolute;
+      left: 0;
+      transition: var(--transition);
+    }
+
+    .hamburger span:nth-child(1) { top: 0; }
+    .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+    .hamburger span:nth-child(3) { bottom: 0; }
+
+    .hamburger.active span:nth-child(1) {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) {
+      bottom: 50%;
+      transform: translateY(50%) rotate(-45deg);
+    }
+
+    /* ============================================
+       HERO
+       ============================================ */
+    .hero {
+      height: 100vh;
+      min-height: 800px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(248, 250, 252, 0.7) 100%);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60%;
+      height: 100%;
+      background: var(--gradient);
+      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark-color);
+      line-height: 1.1;
+    }
+
+    .hero-title span {
+      color: var(--primary-color);
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-social {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 2;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .social-icon:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    /* ============================================
+       ABOUT
+       ============================================ */
+    .about {
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--gradient);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .about::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--gradient-secondary);
+      border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-image {
+      border-radius: var(--border-radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .about-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .about-content h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark-color);
+    }
+
+    .about-text {
+      margin-bottom: 2rem;
+      color: var(--text-light);
+    }
+
+    .skills {
+      margin-top: 2rem;
+    }
+
+    .skill-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .skill-bar {
+      height: 8px;
+      background-color: #e2e8f0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background: var(--gradient);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-progress::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 100%);
+      animation: shine 2s infinite;
+    }
+
+    @keyframes shine {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* ============================================
+       SERVICES
+       ============================================ */
+    .services {
+      background-color: #f1f5f9;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient);
+      opacity: 0;
+      transition: var(--transition);
+      z-index: -1;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-card:hover .service-icon {
+      background: white;
+      color: var(--primary-color);
+    }
+
+    .service-card:hover .service-description {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .service-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-description {
+      color: var(--text-light);
+      transition: var(--transition);
+    }
+
+    /* ============================================
+       PORTFOLIO
+       ============================================ */
+    .portfolio {
+      background-color: white;
+    }
+
+    .portfolio-filter {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: var(--transition);
+      font-weight: 500;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--gradient);
+      color: white;
+      border-color: var(--primary-color);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .portfolio-item {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .portfolio-item:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .portfolio-image {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .portfolio-overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      padding: 30px;
+      background: rgba(37, 99, 235, 0.95);
+      color: white;
+      transition: var(--transition);
+    }
+
+    .portfolio-item:hover .portfolio-overlay {
+      bottom: 0;
+    }
+
+    .portfolio-item:hover .portfolio-image {
+      transform: scale(1.1);
+    }
+
+    .portfolio-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio-category {
+      display: inline-block;
+      padding: 5px 15px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-overlay p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      opacity: 0.95;
+    }
+
+    .portfolio-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .portfolio-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .portfolio-link:hover {
+      background: var(--dark-color);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================
+       TESTIMONIALS
+       ============================================ */
+    .testimonials {
+      background-color: #f1f5f9;
+      position: relative;
+    }
+
+    .glide__slides {
+      padding: 20px 0;
+    }
+
+    .testimonial-item {
+      background: white;
+      padding: 40px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      margin: 0 20px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .testimonial-item:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .testimonial-quote {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2rem;
+      color: var(--primary-color);
+      opacity: 0.2;
+    }
+
+    .testimonial-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      border: 3px solid var(--primary-color);
+      box-shadow: var(--shadow);
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--text-light);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-position {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .glide__bullets {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .glide__bullet {
+      width: 12px;
+      height: 12px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .glide__bullet:hover,
+    .glide__bullet--active {
+      background: var(--primary-color);
+    }
+
+    /* ============================================
+       STATS
+       ============================================ */
+    .stats {
+      background: var(--gradient);
+      color: white;
+      padding: 80px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 20px;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .stat-title {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* ============================================
+       CONTACT
+       ============================================ */
+    .contact {
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--gradient-secondary);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 50px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark-color);
+    }
+
+    .contact-text {
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .contact-details {
+      margin-bottom: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gradient);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .contact-item h4 {
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .contact-item p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: inherit;
+      transition: var(--transition);
+      background: #f8fafc;
+      font-size: 1rem;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+      background: white;
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-submit .btn {
+      flex: 1;
+    }
+
+    .form-status {
+      margin-top: 20px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: none;
+    }
+
+    .form-status.success {
+      background: #d1fae5;
+      color: #065f46;
+      display: block;
+    }
+
+    .form-status.error {
+      background: #fee2e2;
+      color: #b91c1c;
+      display: block;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 60px 0 20px;
+      position: relative;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .footer-title {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      color: white;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: var(--primary-color);
+    }
+
+    .footer-col p {
+      color: #94a3b8;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-link {
+      color: #94a3b8;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-link:hover {
+      color: white;
+      padding-left: 5px;
+    }
+
+    .footer-link i {
+      font-size: 0.8rem;
+    }
+
+    footer .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    footer .social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    footer .social-link:hover {
+      background: var(--primary-color);
+      transform: translateY(-5px);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    /* ============================================
+       BACK TO TOP
+       ============================================ */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gradient);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .back-to-top.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* ============================================
+       PROJECT MODAL
+       ============================================ */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-container {
+      background: white;
+      border-radius: var(--border-radius);
+      width: 90%;
+      max-width: 900px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 30px;
+      position: relative;
+      transform: translateY(50px);
+      transition: var(--transition);
+    }
+
+    .modal.active .modal-container {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background: #f1f5f9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      font-size: 1rem;
+    }
+
+    .modal-close:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    .modal-header {
+      margin-bottom: 30px;
+    }
+
+    .modal-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .modal-category {
+      display: inline-block;
+      padding: 5px 15px;
+      background: var(--gradient);
+      color: white;
+      border-radius: 50px;
+      font-size: 0.9rem;
+    }
+
+    .modal-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .modal-image {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .modal-content h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .modal-content p {
+      margin-bottom: 20px;
+      color: var(--text-light);
+    }
+
+    .modal-tech {
+      margin-bottom: 20px;
+    }
+
+    .tech-tag {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #f1f5f9;
+      border-radius: 4px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+    }
+
+    .modal-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1200px) {
+      .hero::before {
+        width: 70%;
+        clip-path: polygon(30% 0%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .hero-title { font-size: 3rem; }
+      .about-container { grid-template-columns: 1fr; }
+      .about-image { max-width: 500px; margin: 0 auto; }
+      .modal-body { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        transition: var(--transition);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .nav-menu.active { left: 0; }
+      .nav-item { margin: 15px 0; }
+      .hamburger { display: block; }
+
+      .hero {
+        padding-top: 80px;
+        height: auto;
+        min-height: auto;
+      }
+      .hero::before { display: none; }
+      .hero-content {
+        margin-top: 80px;
+        text-align: center;
+      }
+      .hero-btns { justify-content: center; }
+      .hero-social { display: none; }
+
+      .section { padding: 70px 0; }
+      .section-title { font-size: 2rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 576px) {
+      .hero-title { font-size: 2.5rem; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .modal-container { padding: 20px; }
+    }
+
+    /* ============================================
+       ANIMATION STYLES (AOS fallback)
+       ============================================ */
+    [data-aos="fade-up"] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    [data-aos="fade-up"].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    [data-aos="fade-left"] {
+      opacity: 0;
+      transform: translateX(30px);
+      transition: all 0.8s ease;
+    }
+    [data-aos="fade-left"].aos-animate {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    [data-aos="fade-right"] {
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: all 0.8s ease;
+    }
+    [data-aos="fade-right"].aos-animate {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    [data-aos="zoom-in"] {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.8s ease;
+    }
+    [data-aos="zoom-in"].aos-animate {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    [data-aos="flip-up"] {
+      opacity: 0;
+      transform: perspective(1000px) rotateX(30deg);
+      transition: all 0.8s ease;
+    }
+    [data-aos="flip-up"].aos-animate {
+      opacity: 1;
+      transform: perspective(1000px) rotateX(0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" stroke="#2563eb" stroke-width="8" fill="none" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fas fa-code"></i></div>
+        <span>Raj<span>vardhan</span></span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link"><i class="fas fa-cog"></i> Services</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link"><i class="fas fa-comment"></i> Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-right">
+        <h1 class="hero-title">Hi, I'm <span>Rajvardhan Singh</span></h1>
+        <p class="hero-subtitle">Web Developer & UI/UX Designer from Indore, India</p>
+        <div class="hero-btns">
+          <a href="#portfolio" class="btn"><i class="fas fa-briefcase"></i> View My Work</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-social">
+        <a href="https://github.com/singhrajvardhan" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rajvardhan-singh-badgujar-3a4824358/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/webbyraj/" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:rajvardhancoder@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Get to know me better</p>
+
+      <div class="about-container">
+        <div class="about-image" data-aos="zoom-in">
+          <img src="logo.png" alt="Rajvardhan Singh">
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h3>Who am I?</h3>
+          <p class="about-text">I'm a passionate web developer and designer based in Indore, India, specializing in creating modern, responsive websites and web applications. With a strong foundation in front-end technologies, I bring ideas to life through clean, efficient code and intuitive user interfaces.</p>
+
+          <p class="about-text">My approach combines technical expertise with creative problem-solving to deliver solutions that are both functional and visually appealing. I'm committed to continuous learning and staying updated with the latest web technologies to provide the best possible results for every project.</p>
+
+          <div class="skills">
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-name"><span>HTML/CSS</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-name"><span>JavaScript</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-name"><span>React</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-name"><span>UI/UX Design</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">My Services</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">What I can do for you</p>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description">Building responsive, high-performance websites using modern technologies like HTML5, CSS3, JavaScript, and React.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-description">Creating intuitive and visually appealing user interfaces with a focus on user experience and accessibility.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="service-title">Responsive Design</h3>
+          <p class="service-description">Ensuring websites work flawlessly across all devices from desktop to mobile with responsive frameworks.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <h3 class="service-title">SEO Optimization</h3>
+          <p class="service-description">Optimizing websites for search engines to improve visibility and ranking in search results.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="service-title">Digital Marketing</h3>
+          <p class="service-description">Promoting products or services through digital channels to reach and engage target audiences.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-icon"><i class="fas fa-headset"></i></div>
+          <h3 class="service-title">Support & Maintenance</h3>
+          <p class="service-description">Providing ongoing support and maintenance to keep websites up-to-date and running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up">
+          <div class="stat-number" data-count="4">0</div>
+          <div class="stat-title">Projects Completed</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-number" data-count="4">0</div>
+          <div class="stat-title">Happy Clients</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-number" data-count="0">0</div>
+          <div class="stat-title">Fresher</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Some of my recent work</p>
+
+      <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 - Thikana Dhabla -->
+        <div class="portfolio-item" data-category="web" data-aos="fade-up">
+          <img src="thikanap.jpg" alt="Thikana Dhabla" class="portfolio-image">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-title">Thikana Dhabla</h4>
+            <span class="portfolio-category">Web Development</span>
+            <p>Developed and launched an informative website dedicated to preserving and showcasing the legacy of the Badgujar Rajput clan.</p>
+            <div class="portfolio-links">
+              <a href="https://www.thikanadhabla.in" target="_blank" class="portfolio-link" title="View Live"><i class="fas fa-link"></i></a>
+              <a href="#" class="portfolio-link view-details" title="View Details" data-project="thikana-dhabla"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 - Deep Architect -->
+        <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+          <img src="deep.jpg" alt="Deep Architect" class="portfolio-image">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-title">Deep Architect</h4>
+            <span class="portfolio-category">Web Development</span>
+            <p>Designed and developed a professional website for an architecture firm showcasing their projects and services.</p>
+            <div class="portfolio-links">
+              <a href="https://deeparchitect.in" target="_blank" class="portfolio-link" title="View Live"><i class="fas fa-link"></i></a>
+              <a href="#" class="portfolio-link view-details" title="View Details" data-project="deep-architect"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 - JuzVents -->
+        <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <img src="ramj.jpg" alt="JuzVents" class="portfolio-image">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-title">JuzVents</h4>
+            <span class="portfolio-category">Web Development</span>
+            <p>Created a vibrant website for an event management company specializing in family and corporate events.</p>
+            <div class="portfolio-links">
+              <a href="https://www.juzvents.com" target="_blank" class="portfolio-link" title="View Live"><i class="fas fa-link"></i></a>
+              <a href="#" class="portfolio-link view-details" title="View Details" data-project="juzvents"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 - Portfolio Design -->
+        <div class="portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="300">
+          <img src="raj.jpg" alt="Portfolio Design" class="portfolio-image">
+          <div class="portfolio-overlay">
+            <h4 class="portfolio-title">Portfolio Website</h4>
+            <span class="portfolio-category">UI/UX Design</span>
+            <p>Designed and developed a personal portfolio website to showcase skills and projects.</p>
+            <div class="portfolio-links">
+              <a href="#" class="portfolio-link" title="View Live"><i class="fas fa-link"></i></a>
+              <a href="#" class="portfolio-link view-details" title="View Details" data-project="portfolio-design"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">What people say about my work</p>
+
+      <div class="glide" data-aos="fade-up" data-aos-delay="200">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="testimonial-item">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <img src="rame.jpg" alt="Ramendra Singh Sisodiya" class="testimonial-avatar">
+                <p class="testimonial-text">"Rajvardhan designed an exceptional website for our business, demonstrating remarkable attention to detail and problem-solving expertise. He delivered exactly what we needed, on time and with precision."</p>
+                <h4 class="testimonial-author">Ramendra Singh Sisodiya</h4>
+                <span class="testimonial-position">Client - Thikana Dhabla</span>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="testimonial-item">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <img src="ru.jpeg" alt="Rupesh Singh Chawda" class="testimonial-avatar">
+                <p class="testimonial-text">"Collaborating with Rajvardhan was a seamless experience. He quickly grasped our requirements and implemented innovative solutions that went beyond our expectations."</p>
+                <h4 class="testimonial-author">Rupesh Singh Chawda</h4>
+                <span class="testimonial-position">Client - Deep Architect</span>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="testimonial-item">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <img src="raml.png" alt="JuzVents Team" class="testimonial-avatar">
+                <p class="testimonial-text">"The website Rajvardhan created for our event management business has significantly boosted our online presence and bookings. His understanding of our industry needs was impressive."</p>
+                <h4 class="testimonial-author">JuzVents Team</h4>
+                <span class="testimonial-position">Client - JuzVents</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Have a project in mind? Let's talk</p>
+
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <h3 class="contact-title">Contact Information</h3>
+          <p class="contact-text">Feel free to reach out to me for any questions or opportunities. I'll get back to you as soon as possible.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>rajvardhancoder@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 9770289936</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Location</h4>
+                <p>Navlakh, Indore, Madhya Pradesh, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/singhrajvardhan" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rajvardhan-singh-badgujar-3a4824358/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/webbyraj/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:rajvardhancoder@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <a href="rajcv.pdf" download="rajcv.pdf" class="btn btn-secondary" style="margin-top: 20px;">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contactForm" method="POST">
+            <input type="hidden" name="access_key" value="a1f0a50d-a099-4a82-9385-5f875baa35c2">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </div>
+
+            <div class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="footer-title">Rajvardhan Singh</h3>
+          <p>Web Developer & UI/UX Designer creating digital experiences that matter.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about" class="footer-link"><i class="fas fa-chevron-right"></i> About</a></li>
+            <li><a href="#services" class="footer-link"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="#portfolio" class="footer-link"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+            <li><a href="#contact" class="footer-link"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Responsive Design</a></li>
+            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> SEO Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Connect</h3>
+          <div class="social-links">
+            <a href="https://github.com/singhrajvardhan" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rajvardhan-singh-badgujar-3a4824358/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/webbyraj/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:rajvardhancoder@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> Rajvardhan Singh. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Project Modals -->
+  <!-- Thikana Dhabla Modal -->
+  <div class="modal" id="thikana-dhabla-modal">
+    <div class="modal-container">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-title">Thikana Dhabla</h3>
+        <span class="modal-category">Web Development</span>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image"><img src="thikanap.jpg" alt="Thikana Dhabla"></div>
+        <div class="modal-content">
+          <h3>Project Overview</h3>
+          <p>Developed and launched an informative website dedicated to preserving and showcasing the legacy of the Badgujar Rajput clan. The platform features a comprehensive family tree, historical narratives, and a gallery of traditional ceremonies, serving as a valuable resource for both family members and historians interested in Rajput heritage.</p>
+          <p>Emphasized responsive design and user-friendly navigation to enhance accessibility and user engagement across all devices.</p>
+          <div class="modal-tech">
+            <h3>Technologies Used</h3>
+            <div>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a href="https://www.thikanadhabla.in" target="_blank" class="btn"><i class="fas fa-link"></i> Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deep Architect Modal -->
+  <div class="modal" id="deep-architect-modal">
+    <div class="modal-container">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-title">Deep Architect</h3>
+        <span class="modal-category">Web Development</span>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image"><img src="deep.jpg" alt="Deep Architect"></div>
+        <div class="modal-content">
+          <h3>Project Overview</h3>
+          <p>Designed and developed a professional website for Deep Architect, an architecture firm showcasing their projects and services. The website features a modern, clean design that highlights their architectural portfolio with high-quality images and detailed project descriptions.</p>
+          <p>Implemented a responsive layout that works seamlessly across all devices, ensuring potential clients can view their work from anywhere. The site includes a contact form for inquiries and integration with their social media profiles.</p>
+          <div class="modal-tech">
+            <h3>Technologies Used</h3>
+            <div>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">PHP</span>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a href="https://deeparchitect.in" target="_blank" class="btn"><i class="fas fa-link"></i> Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JuzVents Modal -->
+  <div class="modal" id="juzvents-modal">
+    <div class="modal-container">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-title">JuzVents</h3>
+        <span class="modal-category">Web Development</span>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image"><img src="ramj.jpg" alt="JuzVents"></div>
+        <div class="modal-content">
+          <h3>Project Overview</h3>
+          <p>Created a vibrant website for JuzVents, an event management company specializing in family and corporate events. The website showcases their event portfolio, services, and client testimonials with an energetic design that reflects their brand personality.</p>
+          <p>Developed a custom gallery to display their past events, integrated with a contact form for event inquiries, and optimized the site for fast loading times to improve user experience and search engine rankings.</p>
+          <div class="modal-tech">
+            <h3>Technologies Used</h3>
+            <div>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">jQuery</span>
+              <span class="tech-tag">Lightbox</span>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a href="https://www.juzvents.com" target="_blank" class="btn"><i class="fas fa-link"></i> Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Design Modal -->
+  <div class="modal" id="portfolio-design-modal">
+    <div class="modal-container">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-title">Portfolio Website</h3>
+        <span class="modal-category">UI/UX Design</span>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image"><img src="raj.jpg" alt="Portfolio Design"></div>
+        <div class="modal-content">
+          <h3>Project Overview</h3>
+          <p>Designed and developed a personal portfolio website to showcase skills, projects, and experience. The website features a modern, responsive design with smooth animations and an intuitive user interface.</p>
+          <p>Implemented various interactive elements including project modals, skill progress bars, and a functional contact form to create an engaging user experience.</p>
+          <div class="modal-tech">
+            <h3>Technologies Used</h3>
+            <div>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">AOS Animation</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a href="#" class="btn"><i class="fas fa-link"></i> Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
+
+  <script>
+    // ============================================
+    // PRELOADER
+    // ============================================
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.querySelector('.preloader').style.opacity = '0';
+        document.querySelector('.preloader').style.visibility = 'hidden';
+      }, 500);
+    });
+
+    // ============================================
+    // MOBILE NAV
+    // ============================================
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', function () {
+      this.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // ============================================
+    // STICKY HEADER
+    // ============================================
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 100);
+    });
+
+    // ============================================
+    // ACTIVE NAV LINK
+    // ============================================
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', function () {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 300) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // ============================================
+    // SMOOTH SCROLLING
+    // ============================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ============================================
+    // PORTFOLIO FILTER
+    // ============================================
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filterValue = this.getAttribute('data-filter');
+        portfolioItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+            item.style.animation = 'fadeIn 0.5s ease';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ============================================
+    // TESTIMONIALS SLIDER
+    // ============================================
+    new Glide('.glide', {
+      type: 'carousel',
+      perView: 1,
+      autoplay: 4000,
+      hoverpause: true,
+      gap: 30,
+      breakpoints: { 768: { perView: 1 } }
+    }).mount();
+
+    // ============================================
+    // STATS COUNTER
+    // ============================================
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number');
+      const speed = 200;
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-count');
+        const count = +counter.innerText;
+        const increment = target / speed;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(animateCounters, 20);
+        } else {
+          counter.innerText = target;
+        }
+      });
+    }
+
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(statsSection);
+    }
+
+    // ============================================
+    // BACK TO TOP
+    // ============================================
+    const backToTopBtn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('active');
+      } else {
+        backToTopBtn.classList.remove('active');
+      }
+    });
+    backToTopBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ============================================
+    // CONTACT FORM (Web3Forms)
+    // ============================================
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.querySelector('.form-status');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      formStatus.style.display = 'none';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          formStatus.className = 'form-status success';
+          formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully!';
+          formStatus.style.display = 'block';
+          contactForm.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        formStatus.className = 'form-status error';
+        formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> There was an error sending your message. Please try again.';
+        formStatus.style.display = 'block';
+        console.error('Error:', error);
+      });
+    });
+
+    // ============================================
+    // PROJECT MODALS
+    // ============================================
+    const viewDetailBtns = document.querySelectorAll('.view-details');
+    const modals = document.querySelectorAll('.modal');
+    const modalCloseBtns = document.querySelectorAll('.modal-close');
+
+    viewDetailBtns.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const projectId = this.getAttribute('data-project');
+        const modal = document.getElementById(`${projectId}-modal`);
+        if (modal) {
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    modalCloseBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        this.closest('.modal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+    });
+
+    modals.forEach(modal => {
+      modal.addEventListener('click', function (e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        }
+      });
+    });
+
+    // ============================================
+    // AOS INIT
+    // ============================================
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
+
+    // ============================================
+    // CURRENT YEAR
+    // ============================================
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ============================================
+    // VISITOR ANALYTICS (SheetDB)
+    // ============================================
+    const ANALYTICS_ENDPOINT = 'https://sheetdb.io/api/v1/bw1sjj410wd1o';
+
+    function sendAnalytics(data) {
+      fetch(ANALYTICS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data: data })
+      }).catch(() => { /* silent fail */ });
+    }
+
+    // Visitor data
+    const visitorData = {
+      type: 'visit',
+      page: window.location.href,
+      referrer: document.referrer || 'Direct',
+      browser: navigator.userAgent,
+      screen: `${screen.width}x${screen.height}`,
+      language: navigator.language,
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      device: /Mobi|Android/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop',
+      visit_time: new Date().toISOString()
+    };
+
+    fetch('https://ipapi.co/json/')
+      .then(res => res.json())
+      .then(data => {
+        visitorData.ip = data.ip;
+        visitorData.city = data.city;
+        visitorData.region = data.region;
+        visitorData.country = data.country_name;
+        sendAnalytics(visitorData);
+      })
+      .catch(() => sendAnalytics(visitorData));
+
+    // Track clicks
+    document.addEventListener('click', function (e) {
+      sendAnalytics({
+        type: 'click',
+        element: e.target.tagName,
+        id: e.target.id || '',
+        class: typeof e.target.className === 'string' ? e.target.className : '',
+        page: window.location.href,
+        time: new Date().toISOString()
+      });
+    });
+
+    // Track scroll depth
+    let maxScroll = 0;
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      if (docHeight <= 0) return;
+      const scrolledPercent = Math.floor((scrollTop / docHeight) * 100);
+      if (scrolledPercent > maxScroll && scrolledPercent % 25 === 0) {
+        maxScroll = scrolledPercent;
+        sendAnalytics({
+          type: 'scroll',
+          page: window.location.href,
+          percent: maxScroll + '%',
+          time: new Date().toISOString()
+        });
+      }
+    });
+
+    // Track time spent on page
+    const startTime = new Date();
+    window.addEventListener('beforeunload', function () {
+      const endTime = new Date();
+      const timeSpent = (endTime - startTime) / 1000;
+      const payload = JSON.stringify({
+        data: {
+          type: 'time_spent',
+          page: window.location.href,
+          seconds: Math.round(timeSpent),
+          time: new Date().toISOString()
+        }
+      });
+      navigator.sendBeacon(ANALYTICS_ENDPOINT, new Blob([payload], { type: 'application/json' }));
+    });
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8ca7d248cd1a44c7a1879e57a4342dd7"}'></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rajvardhan Singh",
+    "url": "https://www.rajvardhansingh.in",
+    "sameAs": [
+      "https://github.com/singhrajvardhan",
+      "https://www.linkedin.com/in/rajvardhan-singh-badgujar-3a4824358/",
+      "https://www.instagram.com/webbyraj/"
+    ],
+    "jobTitle": "Web Developer",
+    "worksFor": { "@type": "Organization", "name": "Freelance" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Indore",
+      "addressRegion": "Madhya Pradesh",
+      "addressCountry": "India"
+    },
+    "description": "Web developer specializing in React, JavaScript, and modern frontend technologies.",
+    "image": "https://www.rajvardhansingh.in/logo.png"
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+
+   <link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://deeparchitects.in/xmlrpc.php">
+	<link rel="icon" href="/images/deeplogo.jpeg" />
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script>window._wca = window._wca || [];</script>
+
+
+<meta name="msvalidate.01" content="3078674DB23736343E8DC8F993591787" />
+
+
+<meta name="msvalidate.01" content="3078674DB23736343E8DC8F993591787" />
+	<!-- This site is optimized with the Yoast SEO plugin v23.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda</title>
+
+
+
+<meta name="description" content="Deep Architect is a leading architecture firm in Dewas, Indore, Bhopal & Sonkatch offering innovative residential & commercial designs. Professional services by architect Rupesh Chawda.">
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="Deep Architect - Professional Architecture Services in Dewas, Indore, Bhopal">
+<meta name="description" content="Award-winning architecture firm in Central India providing sustainable building designs, interior solutions, and construction supervision across Madhya Pradesh.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deeparchitect.in/">
+<meta property="og:title" content="Deep Architect | Top Architecture Firm in Central India">
+<meta property="og:description" content="Professional architecture services in Dewas, Indore, Bhopal & Sonkatch - Residential & Commercial designs, Interior solutions, and Construction supervision.">
+<meta property="og:image" content="https://deeparchitect.in/images/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://deeparchitect.in/">
+<meta property="twitter:title" content="Deep Architect | Top Architecture Firm in Central India">
+<meta property="twitter:description" content="Professional architecture services in Dewas, Indore, Bhopal & Sonkatch - Residential & Commercial designs, Interior solutions, and Construction supervision.">
+<meta property="twitter:image" content="https://deeparchitect.in/images/twitter-card.jpg">
+
+
+
+
+
+
+	         <!-- Primary Meta Tags -->
+<meta name="title" content="Rupesh Chawda - Professional Architecture Engineer in Dewas">
+<meta name="description" content="Rupesh Chawda is a professional architecture engineer in Dewas specializing in sustainable residential & commercial designs. View portfolio of award-winning architectural projects.">
+
+<!-- Open Graph / Facebook Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deeparchitect.in/">
+<meta property="og:title" content="Rupesh Chawda - Professional Architecture Engineer in Dewas">
+<meta property="og:description" content="Professional architecture engineer specializing in sustainable residential & commercial designs in Dewas.">
+<meta property="og:image" content="https://deeparchitect.in/logo.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://deeparchitect.in/">
+<meta property="twitter:title" content="Rupesh Chawda - Professional Architecture Engineer in Dewas">
+<meta property="twitter:description" content="Professional architecture engineer specializing in sustainable residential & commercial designs in Dewas.">
+<meta property="twitter:image" content="https://deeparchitect.in/logo.jpg">
+
+<!-- Additional Important Meta Tags -->
+<meta name="keywords" content="architecture engineer, Dewas architect, building design, residential architect, commercial architect, sustainable design, interior design, construction supervision">
+<meta name="author" content="Rupesh Chawda">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="7 days">
+<meta name="language" content="English">
+<meta name="geo.region" content="IN-MP">
+<meta name="geo.placename" content="Dewas">
+<meta name="geo.position" content="22.9623;76.0508">
+<meta name="ICBM" content="22.9623, 76.0508">
+
+  <!-- SEO Meta Tags -->
+    <meta name="description" content="Rupesh Chawda provides innovative, sustainable architectural designs that transform spaces. With over 10 years of experience, we design modern residential, commercial, and interior projects." />
+    <meta name="keywords" content="architectural design, sustainable design, residential projects, commercial projects, interior design, architecture engineer, Rupesh Chawda, modern architecture, construction supervision" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://deeparchitect.in/" />
+
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Rupesh Chawda - Innovative Architectural Solutions" />
+    <meta property="og:description" content="Discover sustainable architecture and modern design solutions that enhance living and working spaces. Explore our portfolio of residential, commercial, and interior projects." />
+    <meta property="og:url" content="https://deeparchitect.in/" />
+    <meta property="og:type" content="website" />
+    <!-- Replace with a valid image URL that represents your brand -->
+    <meta property="og:image" content="https://deeparchitect.in/path-to-your-image.jpg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rupesh Chawda - Innovative Architectural Solutions" />
+    <meta name="twitter:description" content="With over 10 years of experience, Rupesh Chawda combines creativity with technical expertise to deliver top-notch architectural projects." />
+    <!-- Replace with a valid image URL for Twitter -->
+    <meta name="twitter:image" content="https://deeparchitect.in/path-to-your-image.jpg" />
+	<meta name="description" content="Discover innovative architectural solutions with Deep Architects. Specializing in 2D layouts, 3D isometric views &amp; more, we blend creativity with precision &amp; bring your visions to life. Elevate your project today!" />
+	<link rel="canonical" href="https://deeparchitect.in/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Deep Architect" />
+	<meta property="og:description" content="Discover innovative architectural solutions with Deep Architects. Specializing in 2D layouts, 3D isometric views &amp; more, we blend creativity with precision &amp; bring your visions to life. Elevate your project today!" />
+	<meta property="og:url" content="https://deeparchitect.in/" />
+	<meta property="og:site_name" content="Deep Architect" />
+	<meta property="article:publisher" content="https://www.facebook.com/deeparchitects1220" />
+	<meta property="article:modified_time" content="2024-03-06T12:35:13+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://deeparchitect.in/","url":"https://deeparchitect.in/","name":"Deep Architects","isPartOf":{"@id":"https://deeparchitects.in/#website"},"about":{"@id":"https://deeparchitect.in/#index"},"datePublished":"2017-02-19T10:30:25+00:00","dateModified":"2024-03-06T12:35:13+00:00","description":"Discover innovative architectural solutions with Deep Architects. Specializing in 2D layouts, 3D isometric views & more, we blend creativity with precision & bring your visions to life. Elevate your project today!","breadcrumb":{"@id":"https://deeparchitect.in/#breadcrumb"},"inLanguage":"en","potentialAction":[{"@type":"ReadAction","target":["https://deeparchitects.in/"]}]},{"@type":"BreadcrumbList","@id":"https://deeparchitect.in/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://deeparchitects.in/#website","url":"https://deeparchitect.in/","name":"Deep Architect","description":"Creating iconic designs that redefine spaces. Passionate about crafting world-class architecture. Join us on our journey!","publisher":{"@id":"https://deeparchitect.in/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://deeparchitects.in/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en"},{"@type":"Organization","@id":"https://deeparchitects.in/#organization","name":"Deep Architects","url":"https://deeparchitects.in/","logo":{"@type":"ImageObject","inLanguage":"en","@id":"https://deeparchitects.in/#/schema/logo/image/","url":"https://deeparchitects.in/wp-content/uploads/2023/07/deep-architects-logo-copy.png","contentUrl":"https://deeparchitects.in/wp-content/uploads/2023/07/deep-architects-logo-copy.png","width":600,"height":600,"caption":"Deep Architects"},"image":{"@id":"https://deeparchitects.in/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/deeparchitects1220","https://www.linkedin.com/company/deep-architect-interior/","https://www.instagram.com/deep_architects"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+    <style> 
+    /* Map Container Styles */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.map-container iframe:hover {
+    filter: grayscale(0%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: 250px;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">DEEP<span>ARCHITECTS</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                       <li><a href="index.php" class="nav-link active">Home</a></li>
+                    <li><a href="about.php" class="nav-link">About</a></li>
+                    <li><a href="design.php" class="nav-link ">Design</a></li>
+                    <li><a href="projects.php" class="nav-link">Projects</a></li>
+                    <li><a href="contact.php" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <h1 class="hero-title">Shaping the Future of Architecture</h1>
+                    <p class="hero-subtitle">Innovative designs that stand the test of time</p>
+                    <a href="#about" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <h1 class="hero-title">Where Vision Meets Structure</h1>
+                    <p class="hero-subtitle">Creating spaces that inspire and endure</p>
+                    <a href="#about" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600566752225-3f2fe3c8f7a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <h1 class="hero-title">Architectural Excellence</h1>
+                    <p class="hero-subtitle">Designing tomorrow's landmarks today</p>
+                    <a href="#about" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <h1 class="hero-title">Sustainable Innovation</h1>
+                    <p class="hero-subtitle">Eco-conscious designs for modern living</p>
+                    <a href="#about" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                <div class="container">
+                    <h1 class="hero-title">Timeless Design</h1>
+                    <p class="hero-subtitle">Architecture that tells a story</p>
+                    <a href="#about" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Our vision and expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Deep Architects was founded with a passion for creating spaces that inspire and endure.</h3>
+                    <p>We believe architecture should not only serve functional needs but also elevate the human experience. Our team of visionary architects combines technical expertise with artistic sensibility to deliver exceptional results.</p>
+                    <p>With offices in major cities worldwide, we bring a global perspective to every project while maintaining deep roots in local context and culture. Our approach balances innovation with timeless design principles.</p>
+                    <div class="signature">
+                     <!--    <img src="https://i.imgur.com/JQZ1wzM.png" alt="Signature"> -->
+                        <p>Rupesh Singh Chawda<br><span>Founder & Principal Architect</span></p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                      <img src="images/deeplogo.jpeg" alt="Architects working">
+                        <div class="blueprint-overlay"></div>   <!-- -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive architectural solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Architectural Design</h3>
+                    <p>From concept to completion, we create innovative designs that balance aesthetics, functionality, and sustainability.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Design</h3>
+                    <p>Custom homes that reflect your lifestyle while incorporating smart design and energy efficiency.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Design</h3>
+                    <p>Spaces that enhance productivity, brand identity, and user experience for businesses of all sizes.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-subtitle">The creative minds behind our success</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/rk.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>Rupesh Singh Chawda (B.Arch</h3>
+                        <p>Principal Architect& Founder</p>
+                        <p class="team-bio">Visionary leader with 10+ years in sustainable design.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/images/rituraj.jpeg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>Er.Rituraj Singh Rathod (B.Civil)</h3>
+                        <p>Assistant Engineer</p>
+                        <p class="team-bio">Specializes in urban planning and mixed-use developments.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/rajf.jpeg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>Er.Mayank Singh Thakur</h3>
+                        <p>Assistant Engineer</p>
+                        <p class="team-bio">Expert in residential and hospitality projects.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+         <!--       <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h3>David Kim</h3>
+                        <p>Project Manager</p>
+                        <p class="team-bio">Ensures seamless execution from design to construction.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Milestones Section -->
+    <section class="milestones section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Milestones We've Achieved</h2>
+                <p class="section-subtitle">Proud accomplishments that lead us forward</p>
+            </div>
+            <div class="milestones-grid">
+                <div class="milestone-card">
+                    <div class="milestone-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="counter" data-target="250">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="milestone-card">
+                    <div class="milestone-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="counter" data-target="40">0</h3>
+                    <p>Team Members</p>
+                </div>
+                <div class="milestone-card">
+                    <div class="milestone-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p>Industry Awards</p>
+                </div>
+                <div class="milestone-card">
+                    <div class="milestone-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="counter" data-target="10">0</h3>
+                    <p>Years in Industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What our clients say about us</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Deep Architects transformed our vision into a stunning reality. Their attention to detail and innovative approach resulted in a home that exceeds all our expectations."</p>
+                        <div class="testimonial-author">
+                            <img src="images/clnp.jpeg" alt="Client">
+                            <div>
+                                <h4>Pradeep Singh </h4>
+                                <p>Real Estate Developer</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Working with Deep Architects on our corporate headquarters was a seamless experience. They understood our brand identity and created a space that reflects our values while being highly functional."</p>
+                        <div class="testimonial-author">
+                            <img src="images/cln1.jpeg" alt="Client">
+                            <div>
+                                <h4>Pawan  Joshi</h4>
+                                <p>Hotel CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"The hotel design by Deep Architects has received rave reviews from our guests. Their ability to blend aesthetics with operational efficiency is remarkable."</p>
+                        <div class="testimonial-author">
+                            <img src="images/cln2.jpeg" alt="Client">
+                            <div>
+                                <h4>Yogesh  Kumar</h4>
+                             <p>Residential Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"As a developer, I've worked with many architects, but Deep Architects stands out for their creativity, professionalism, and ability to deliver on time and budget."</p>
+                        <div class="testimonial-author">
+                            <img src="images/clns.jpeg" alt="Client">
+                            <div>
+                                <h4>Suresh Singh </h4>
+                                <p>Agricultural Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"The community center designed by Deep Architects has become the heart of our neighborhood. They listened to our needs and created a space that brings people together."</p>
+                        <div class="testimonial-author">
+                            <img src="images/clnp.jpeg" alt="Client">
+                            <div>
+                                <h4>Pradeep Singh </h4>
+                                <p>Community Leader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-dots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   <!-- Contact Section -->
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's create something extraordinary together</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Our Office</h3>
+                        <p>100/2, Deep Tower, Mishrilal Nagar, Kaila Devi Road<br>Dewas, 455001 (M.P.)</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Call Us</h3>
+                        <p>9977822952</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Email Us</h3>
+                        <p>rupeshchawda@outlook.com<br>contact@deeparchitect.in</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 3pm</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.011602783671!2d76.0368324!3d22.9524631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963177f49cdd727%3A0x9715d6f2aadd3bfb!2sDeep%20Architects%20and%20Interiors!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#" class="logo">DEEP<span>ARCHITECTS</span></a>
+                    <p>Shaping the future of architecture through innovative design, sustainability, and timeless aesthetics.</p>
+                    <div class="social-links">
+                       	<li><a target="_blank" href="https://www.facebook.com/rupesh.chawda.581"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/deeparchitect.official/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/rupeshchawda/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+								
+                    <!--    <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>   -->
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                            <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="design.php">Design</a></li>
+                        <li><a href="projects.php">Projects</a></li>
+                       <li><a href="Carrer.php">Carrer</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                                                   <li><a href="sitemap.php">Sitemap</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Architectural Design</a></li>
+                        <li><a href="#">Residential Design</a></li>
+                        <li><a href="#">Commercial Design</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Urban Planning</a></li>
+                        <li><a href="#">Sustainability Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and projects.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p <div class="footer-logo-box">
+						    							    		Deep Architect	& <a href="https://www.rajvardhansingh.in/">Rajvardhan Singh</a> 					    	
+						    	<span class="copyright-text">2025. All Rights Reserved</span></p>
+                <div class="footer-links">
+                        <a href="privacy.php">Privacy Policy</a>
+                    <a href="privacy.php">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+ <script src="script1.js"></script>
+ <script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "ProfessionalService",
+	  "name": "Deep Architect",
+	  "image": "http://deeparchitect.in/logo.jpg",
+	  "@id": "http://deeparchitect.in/",
+	  "url": "http://deeparchitect.in/",
+	  "telephone": "+919977822952",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "100/2, Deep Tower, Mishrilal Nagar, Kela Devi Road",
+		"addressLocality": "Dewas",
+		"postalCode": "455001",
+		"addressCountry": "IN"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 22.9623,
+		"longitude": 76.0508
+	  },
+	  "openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+		  "Monday",
+		  "Tuesday",
+		  "Wednesday",
+		  "Thursday",
+		  "Friday",
+		  "Saturday"
+		],
+		"opens": "10:00",
+		"closes": "19:00"
+	  },
+	  "sameAs": [
+		"https://www.facebook.com/rupesh.chawda.581",
+		"https://www.instagram.com/deeparchitect.official/",
+		"https://www.linkedin.com/in/rupeshchawda/"
+	  ]
+	}
+	</script>
+	<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="s6AUzwfFT7PviTbRDOQpF";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

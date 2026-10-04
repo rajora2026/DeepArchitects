@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Deep Architects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/deeplogo.jpeg" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .logo span {
+            color: #8b7355;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #8b7355;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Career Hero Section */
+        .career-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0 100px;
+            margin-top: 80px;
+        }
+
+        .career-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .career-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        /* Career Content Section */
+        .career-content {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .career-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .career-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .career-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .career-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .career-card p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .career-card ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .career-card li {
+            margin-bottom: 8px;
+        }
+
+        /* Application Form Section */
+        .application-section {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+        }
+
+        .application-form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #8b7355;
+        }
+
+        .file-upload {
+            border: 2px dashed #ddd;
+            border-radius: 4px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .file-upload:hover {
+            border-color: #8b7355;
+        }
+
+        .file-upload i {
+            font-size: 2rem;
+            color: #8b7355;
+            margin-bottom: 15px;
+        }
+
+        .file-upload p {
+            margin-bottom: 10px;
+        }
+
+        .file-upload small {
+            color: #666;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .file-info {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #bbb;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: #8b7355;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #8b7355;
+        }
+
+        .newsletter-form {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .newsletter-form button {
+            background-color: #8b7355;
+            color: #fff;
+            border: none;
+            padding: 0 20px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #756046;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: #333;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .career-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .application-form {
+                padding: 30px 20px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing body content -->
+        <script src="time-tracker-safe.js"></script>
+
+    <!-- Include tracking scripts -->
+    <script src="time-tracker.js"></script>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index" class="logo">DEEP<span>ARCHITECTS</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index" class="nav-link">Home</a></li>
+                    <li><a href="about" class="nav-link">About</a></li>
+                    <li><a href="design" class="nav-link">Design</a></li>
+                    <li><a href="projects" class="nav-link">Projects</a></li>
+                    <li><a href="careers" class="nav-link active">Careers</a></li>
+                    <li><a href="contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Career Hero Section -->
+    <section class="career-hero">
+        <div class="container">
+            <h1>Build Your Career With Us</h1>
+            <p>Join our team of passionate architects and designers creating innovative spaces that inspire and endure.</p>
+            <a href="#application" class="btn btn-primary">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Career Content Section -->
+    <section class="career-content section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Work With Us</h2>
+                <p class="section-subtitle">We offer a dynamic work environment where creativity meets innovation</p>
+            </div>
+            
+            <div class="career-grid">
+                <div class="career-card">
+                    <h3>Creative Freedom</h3>
+                    <p>We believe in giving our team members the autonomy to explore their creative ideas while providing guidance and support.</p>
+                    <ul>
+                        <li>Work on diverse projects</li>
+                        <li>Collaborate with industry experts</li>
+                        <li>Access to latest design tools</li>
+                    </ul>
+                </div>
+                
+                <div class="career-card">
+                    <h3>Professional Growth</h3>
+                    <p>We invest in our team's development through continuous learning opportunities and career advancement paths.</p>
+                    <ul>
+                        <li>Training and workshops</li>
+                        <li>Conference participation</li>
+                        <li>Mentorship programs</li>
+                    </ul>
+                </div>
+                
+                <div class="career-card">
+                    <h3>Competitive Benefits</h3>
+                    <p>We offer a comprehensive benefits package designed to support our team members' wellbeing and success.</p>
+                    <ul>
+                        <li>Health insurance</li>
+                        <li>Flexible work arrangements</li>
+                        <li>Performance bonuses</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-header">
+                <h2 class="section-title">Current Openings</h2>
+                <p class="section-subtitle">Explore opportunities to join our growing team</p>
+            </div>
+            
+            <div class="career-grid">
+                <div class="career-card">
+                    <h3>Junior Architect</h3>
+                    <p>We're looking for a creative and detail-oriented Junior Architect to join our design team.</p>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>Bachelor's degree in Architecture</li>
+                        <li>0-2 years of experience</li>
+                        <li>Proficiency in AutoCAD, Revit, and SketchUp</li>
+                        <li>Strong portfolio of design work</li>
+                    </ul>
+                    <a href="#application" class="btn btn-primary">Apply Now</a>
+                </div>
+                
+                <div class="career-card">
+                    <h3>Interior Designer</h3>
+                    <p>Join our interior design team to create inspiring residential and commercial spaces.</p>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>Degree in Interior Design or related field</li>
+                        <li>2-4 years of experience</li>
+                        <li>Knowledge of materials and finishes</li>
+                        <li>Experience with 3D rendering software</li>
+                    </ul>
+                    <a href="#application" class="btn btn-primary">Apply Now</a>
+                </div>
+                
+                <div class="career-card">
+                    <h3>Project Manager</h3>
+                    <p>We need an experienced Project Manager to oversee our architectural projects from conception to completion.</p>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>Bachelor's degree in Architecture or Construction Management</li>
+                        <li>5+ years of project management experience</li>
+                        <li>Strong organizational and communication skills</li>
+                        <li>Knowledge of building codes and regulations</li>
+                    </ul>
+                    <a href="#application" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="application-section section" id="application">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apply Now</h2>
+                <p class="section-subtitle">Submit your application and join our team of innovative architects</p>
+            </div>
+            
+            <div class="application-form">
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Thank you for your application! We will review your submission and contact you soon.
+                </div>
+                
+                <form id="careerForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="position">Position Applying For *</label>
+                        <select id="position" class="form-control" required>
+                            <option value="">Select a position</option>
+                            <option value="Junior Architect">Junior Architect</option>
+                            <option value="Interior Designer">Interior Designer</option>
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Years of Experience *</label>
+                        <input type="number" id="experience" class="form-control" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="portfolio">Portfolio Link (if any)</label>
+                        <input type="url" id="portfolio" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Upload Your CV/Resume *</label>
+                        <div class="file-upload" id="fileUploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click to upload or drag and drop</p>
+                            <small>PDF, DOC, DOCX, JPG, PNG (Max. 5MB)</small>
+                            <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                        </div>
+                        <div class="file-info" id="fileInfo">
+                            <p><strong>Selected file:</strong> <span id="fileName"></span></p>
+                            <p><strong>File size:</strong> <span id="fileSize"></span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="coverLetter">Cover Letter</label>
+                        <textarea id="coverLetter" class="form-control" rows="5" placeholder="Tell us why you're interested in joining our team..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">DEEP<span>ARCHITECTS</span></a>
+                    <p>Shaping the future of architecture through innovative design, sustainability, and timeless aesthetics.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/rupesh.chawda.581" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/deeparchitect.official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rupeshchawda/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                       <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="projects">Projects</a></li>
+                      <li><a href="carrer">Carrer</a></li>
+                        <li><a href="contact">Contact</a></li>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <a href="#">Architectural Design</a>
+                    <a href="#">Residential Design</a>
+                    <a href="#">Commercial Design</a>
+                    <a href="#">Interior Design</a>
+                    <a href="#">Urban Planning</a>
+                    <a href="#">Sustainability Consulting</a>
+                </div>
+                <div class="footer-col">
+                     <!--    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and projects.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>  -->
+                </div>
+            </div>
+           <div class="footer-bottom">
+                <p <div class="footer-logo-box">
+						    							    		Deep Architect	& <a href="https://www.rajvardhansingh.in/">Rajvardhan Singh</a> 					    	
+						    	<span class="copyright-text">2025. All Rights Reserved</span></p>
+                <div class="footer-links">
+                        <a href="privacy.php">Privacy Policy</a>
+                    <a href="privacy.php">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.nav-list');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // File Upload Functionality
+        const fileUploadArea = document.getElementById('fileUploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        
+        fileUploadArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        fileUploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileUploadArea.style.borderColor = '#8b7355';
+            fileUploadArea.style.backgroundColor = '#f9f9f9';
+        });
+        
+        fileUploadArea.addEventListener('dragleave', () => {
+            fileUploadArea.style.borderColor = '#ddd';
+            fileUploadArea.style.backgroundColor = '';
+        });
+        
+        fileUploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileUploadArea.style.borderColor = '#ddd';
+            fileUploadArea.style.backgroundColor = '';
+            
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                handleFileSelection(e.dataTransfer.files[0]);
+            }
+        });
+        
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length) {
+                handleFileSelection(fileInput.files[0]);
+            }
+        });
+        
+        function handleFileSelection(file) {
+            // Validate file type
+            const allowedTypes = ['application/pdf', 'application/msword', 
+                                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                                 'image/jpeg', 'image/png'];
+            
+            if (!allowedTypes.includes(file.type)) {
+                alert('Please select a valid file type (PDF, DOC, DOCX, JPG, PNG).');
+                fileInput.value = '';
+                return;
+            }
+            
+            // Validate file size (5MB max)
+            const maxSize = 5 * 1024 * 1024; // 5MB in bytes
+            if (file.size > maxSize) {
+                alert('File size exceeds the maximum limit of 5MB.');
+                fileInput.value = '';
+                return;
+            }
+            
+            // Display file info
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            fileInfo.style.display = 'block';
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+        
+        // Form Submission
+        const careerForm = document.getElementById('careerForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        careerForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Basic validation
+            if (!fileInput.files.length) {
+                alert('Please upload your CV/Resume.');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = careerForm.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Create application data object
+                const applicationData = {
+                    fullName: document.getElementById('fullName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    position: document.getElementById('position').value,
+                    experience: document.getElementById('experience').value,
+                    portfolio: document.getElementById('portfolio').value || 'Not provided',
+                    coverLetter: document.getElementById('coverLetter').value || 'Not provided',
+                    submissionDate: new Date().toISOString()
+                };
+                
+                // Create FormData to handle file upload
+                const formData = new FormData();
+                formData.append('applicationData', JSON.stringify(applicationData));
+                formData.append('cvFile', fileInput.files[0]);
+                
+                // Send data to server
+                const response = await submitApplication(formData);
+                
+                if (response.success) {
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    
+                    // Reset form
+                    careerForm.reset();
+                    fileInfo.style.display = 'none';
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    throw new Error(response.message || 'Submission failed');
+                }
+            } catch (error) {
+                console.error('Error submitting application:', error);
+                alert('There was an error submitting your application. Please try again.');
+            } finally {
+                // Reset button state
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+        
+        // Function to submit application to server
+        async function submitApplication(formData) {
+            // In a real implementation, this would point to your server endpoint
+            // For demonstration, we'll simulate the process
+            
+            // Simulate API call delay
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            // In a real implementation, you would use fetch to send data to your server
+            /*
+            const response = await fetch('/api/careers/application', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            
+            return await response.json();
+            */
+            
+            // For demonstration, we'll return a success response
+            // In production, this would be handled by your server
+            return {
+                success: true,
+                message: 'Application submitted successfully',
+                applicationId: 'APP_' + Date.now()
+            };
+        }
+    </script>
+</body>
+</html>

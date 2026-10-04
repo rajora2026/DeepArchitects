@@ -1,0 +1,664 @@
+<?php
+// At the VERY TOP of about.php - nothing before this line
+include 'tracker-debug.php';
+include 'tracker-safe.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Deep Architects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/deeplogo.jpeg" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #d4af37; /* Gold */
+            --secondary-color: #333333; /* Dark Gray */
+            --light-color: #f8f8f8; /* Light Gray */
+            --dark-color: #222222; /* Black */
+            --text-color: #555555;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --section-padding: 100px 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark-color);
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-color);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .section {
+            padding: var(--section-padding);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Privacy Policy Header */
+        .privacy-header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .privacy-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .privacy-header .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .breadcrumb li {
+            margin: 0 10px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb .separator {
+            color: var(--white);
+            opacity: 0.7;
+        }
+
+        /* Privacy Policy Content */
+        .privacy-content {
+            padding: 80px 0;
+        }
+
+        .privacy-section {
+            margin-bottom: 40px;
+        }
+
+        .privacy-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 10px;
+        }
+
+        .privacy-section h3 {
+            color: var(--secondary-color);
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+
+        .privacy-section p {
+            margin-bottom: 15px;
+        }
+
+        .privacy-section ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .privacy-section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .privacy-section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 80px 0 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .footer-col p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-bottom p {
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--primary-color);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--dark-color);
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .privacy-header {
+                padding: 100px 0 40px;
+            }
+            
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 30px;
+            }
+            
+            .section-subtitle {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .privacy-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .breadcrumb {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .breadcrumb li {
+                margin: 5px 10px;
+            }
+            
+            .privacy-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .privacy-section h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body data-session-id="<?php echo $trackingData['session_id']; ?>" data-page-name="<?php echo $trackingData['page_name']; ?>">
+
+    <!-- Your existing body content -->
+        <script src="time-tracker-safe.js"></script>
+
+    <!-- Include tracking scripts -->
+    <script src="time-tracker.js"></script>
+    
+    
+        <!-- Privacy Policy Header -->
+    <header class="privacy-header">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.php">Home</a></li>
+                <li class="separator">/</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </header>
+
+    
+    
+    <!-- Privacy Policy Content -->
+    <main class="privacy-content">
+        <div class="container">
+            <div class="privacy-section">
+                <h2>Introduction</h2>
+                <p>At Deep Architects ("we", "us", or "our"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website deeparchitect.in (the "Site"). Please read this privacy policy carefully.</p>
+                
+                <p>By accessing or using our Site, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our Site.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Information We Collect</h2>
+                
+                <h3>Personal Information</h3>
+                <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                <ul>
+                    <li>Fill out contact forms on our Site</li>
+                    <li>Subscribe to our newsletter</li>
+                    <li>Request information about our services</li>
+                    <li>Participate in surveys or promotions</li>
+                </ul>
+                <p>The types of personal information we may collect include:</p>
+                <ul>
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>Company name</li>
+                    <li>Project details</li>
+                </ul>
+                
+                <h3>Automatically Collected Information</h3>
+                <p>When you visit our Site, we may automatically collect certain information about your device and browsing actions, including:</p>
+                <ul>
+                    <li>IP address</li>
+                    <li>Browser type and version</li>
+                    <li>Pages you visit on our Site</li>
+                    <li>Time and date of your visit</li>
+                    <li>Time spent on those pages</li>
+                    <li>Other diagnostic data</li>
+                </ul>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>How We Use Your Information</h2>
+                <p>We use the information we collect for various purposes, including:</p>
+                <ul>
+                    <li>To provide and maintain our Site</li>
+                    <li>To respond to your inquiries and provide customer support</li>
+                    <li>To improve our Site and services</li>
+                    <li>To send you newsletters and marketing communications (with your consent)</li>
+                    <li>To analyze how you use our Site</li>
+                    <li>To detect, prevent, and address technical issues</li>
+                </ul>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar tracking technologies to track activity on our Site and hold certain information. Cookies are files with small amounts of data which may include an anonymous unique identifier.</p>
+                
+                <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Third-Party Services</h2>
+                <p>We may employ third-party companies and individuals to:</p>
+                <ul>
+                    <li>Facilitate our Site</li>
+                    <li>Provide services on our behalf</li>
+                    <li>Perform Site-related services</li>
+                    <li>Assist us in analyzing how our Site is used</li>
+                </ul>
+                
+                <p>These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect the security of your personal information. However, please remember that no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Your Data Protection Rights</h2>
+                <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+                <ul>
+                    <li>The right to access, update, or delete your information</li>
+                    <li>The right to rectification if your information is inaccurate</li>
+                    <li>The right to object to our processing of your data</li>
+                    <li>The right to request restriction of processing</li>
+                    <li>The right to data portability</li>
+                    <li>The right to withdraw consent</li>
+                </ul>
+                
+                <p>To exercise any of these rights, please contact us using the information below.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Children's Privacy</h2>
+                <p>Our Site is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete such information from our systems.</p>
+            </div>
+            
+            <div class="privacy-section">
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "effective date" at the top.</p>
+                
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </div>
+            
+
+            <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="s6AUzwfFT7PviTbRDOQpF";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+
+            <div class="privacy-section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li>By email: contact@deeparchitect.in</li>
+                    <li>By phone: 9977822952</li>
+                    <li>By mail: 100/2, Deep Tower, Mishrilal Nagar, Kaila Devi Road, Dewas, 455001 (M.P.)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: var(--white); font-size: 24px; font-weight: 700; letter-spacing: 1px; margin-bottom: 20px; display: block;">DEEP<span style="color: var(--primary-color);">ARCHITECTS</span></a>
+                    <p>Shaping the future of architecture through innovative design, sustainability, and timeless aesthetics.</p>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/rupesh.chawda.581"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/deeparchitect.official/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/rupeshchawda/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="design.php">Design</a></li>
+                        <li><a href="projects.php">Projects</a></li>
+                      
+                        <li><a href="contact.php">Contact</a></li>
+                           <li><a href="sitemap.php">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Architectural Design</a></li>
+                        <li><a href="#">Residential Design</a></li>
+                        <li><a href="#">Commercial Design</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Urban Planning</a></li>
+                        <li><a href="#">Sustainability Consulting</a></li>
+                    </ul>
+                </div>
+
+                  <div class="footer-col">
+                    <h3>Location</h3>
+                    <p>100/2, Deep Tower, Mishrilal Nagar,Kaila Devi Road ,Dewas,455001 (M.P.)</p>
+                    <h3 style="margin-top: 20px;">Follow Us</h3>
+                    <div class="social-links">
+                    <a target="_blank" href="https://www.facebook.com/rupesh.chawda.581"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/deeparchitect.official/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/rupeshchawda/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+             
+             <p <div class="footer-logo-box">
+						    							    		Deep Architect	& <a href="https://www.rajvardhansingh.in/">Rajvardhan Singh</a> 					    	
+						    	<span class="copyright-text">2026. All Rights Reserved</span></p>
+                <div class="footer-links">
+                    <a href="privacy.php">Privacy Policy</a>
+                    <a href="privacy.php">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

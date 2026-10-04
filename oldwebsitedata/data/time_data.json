@@ -1,0 +1,222 @@
+[
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 2,
+        "total_time": 0,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T20:26:04.970Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 0
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 2,
+        "total_time": 847,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T20:40:12.215Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 2
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 2,
+        "total_time": 875,
+        "event_type": "heartbeat",
+        "timestamp": "2025-10-30T20:40:40.458Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 2
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 2,
+        "total_time": 877,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T20:40:42.375Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 2
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 1,
+        "total_time": 922,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T20:41:26.981Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 2
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 9,
+        "total_time": 1719,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T20:54:44.120Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 100
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 1,
+        "total_time": 1720,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T20:54:44.874Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 100
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 12,
+        "total_time": 1732,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T20:54:57.263Z",
+        "page_url": "https:\/\/deeparchitect.in\/carrer.php",
+        "page_title": "Careers - Deep Architects",
+        "scroll_depth": 17
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "About Us",
+        "time_spent": 6,
+        "total_time": 2406,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T21:06:11.063Z",
+        "page_url": "https:\/\/deeparchitect.in\/about.php",
+        "page_title": "About Us | Deep Architects",
+        "scroll_depth": 0
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "About Us",
+        "time_spent": 1,
+        "total_time": 2407,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T21:06:12.086Z",
+        "page_url": "https:\/\/deeparchitect.in\/about.php",
+        "page_title": "About Us | Deep Architects",
+        "scroll_depth": 0
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "About Us",
+        "time_spent": 1,
+        "total_time": 2407,
+        "event_type": "user_interaction",
+        "timestamp": "2025-10-30T21:06:12.070Z",
+        "page_url": "https:\/\/deeparchitect.in\/about.php",
+        "page_title": "About Us | Deep Architects",
+        "scroll_depth": 0
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 4,
+        "total_time": 2411,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T21:06:16.347Z",
+        "page_url": "https:\/\/deeparchitect.in\/design.php",
+        "page_title": "Architectural Design | Deep Architects",
+        "scroll_depth": 0
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 1,
+        "total_time": 2412,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T21:06:17.188Z",
+        "page_url": "https:\/\/deeparchitect.in\/design.php",
+        "page_title": "Architectural Design | Deep Architects",
+        "scroll_depth": 0
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 4,
+        "total_time": 2416,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T21:06:21.158Z",
+        "page_url": "https:\/\/deeparchitect.in\/projects.php",
+        "page_title": "Our Projects | Deep Architects",
+        "scroll_depth": 12
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 1,
+        "total_time": 2417,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T21:06:21.979Z",
+        "page_url": "https:\/\/deeparchitect.in\/projects.php",
+        "page_title": "Our Projects | Deep Architects",
+        "scroll_depth": 12
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 4,
+        "total_time": 2421,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T21:06:26.088Z",
+        "page_url": "https:\/\/deeparchitect.in\/contact.php",
+        "page_title": "Contact Us | Deep Architects",
+        "scroll_depth": 100
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 1,
+        "total_time": 2422,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T21:06:26.987Z",
+        "page_url": "https:\/\/deeparchitect.in\/contact.php",
+        "page_title": "Contact Us | Deep Architects",
+        "scroll_depth": 100
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 6,
+        "total_time": 2428,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T21:06:32.963Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 100
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Home",
+        "time_spent": 1,
+        "total_time": 2429,
+        "event_type": "visibility_change",
+        "timestamp": "2025-10-30T21:06:33.762Z",
+        "page_url": "https:\/\/deeparchitect.in\/index.php",
+        "page_title": "Deep Architect | Top Architecture Firm in Dewas, Indore, Bhopal | Rupesh Chawda",
+        "scroll_depth": 100
+    },
+    {
+        "session_id": "f504d2c2428b57975867f1b733b11f43",
+        "page_name": "Design",
+        "time_spent": 2,
+        "total_time": 2431,
+        "event_type": "page_unload",
+        "timestamp": "2025-10-30T21:06:36.311Z",
+        "page_url": "https:\/\/deeparchitect.in\/carrer.php",
+        "page_title": "Careers - Deep Architects",
+        "scroll_depth": 0
+    }
+]
